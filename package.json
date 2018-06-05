@@ -1,0 +1,13 @@
+{
+  "name": "coverage-test",
+  "version": "1.0.0",
+  "scripts": {
+    "cover": "mochify --plugin [ mochify-istanbul --report text ]",
+    "test": "npm run cover -- test/yes-test.js && npm run cover -- test/no-test.js && npm run cover -- test/omit-test.js"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "mochify": "^5.8.0",
+    "mochify-istanbul": "^2.4.2"
+  }
+}
